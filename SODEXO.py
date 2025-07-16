@@ -81,7 +81,7 @@ if uploaded_file is not None:
         df_ali = df_filtrado[['Filial', 'Conta Contabil Alimentação', 'Valor Alimentação', 'CENTRO DE CUSTO']].copy()
         df_ref = df_filtrado[['Filial', 'Conta Contabil Refeição', 'Valor Refeição', 'CENTRO DE CUSTO']].copy()
 
-        # Enriquecimento dos dados
+        # FOR NATUREZA
         for df, tipo, natureza, historico, valor_col in [
             (df_ali, 'R', '202513', 'Credito Sodexo Alimentacao', 'Valor Alimentação'),
             (df_ref, 'R', '200251', 'Credito Sodexo Refeição', 'Valor Refeição')
